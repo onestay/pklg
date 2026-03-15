@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(uv run:*)",
+      "WebFetch(domain:gitlab.com)",
+      "WebFetch(domain:pypi.org)",
+      "Bash(gh issue:*)",
+      "Bash(git clone:*)",
+      "Bash(ls:*)",
+      "Bash(uv sync:*)",
+      "Bash(find:*)"
+    ]
+  }
+}

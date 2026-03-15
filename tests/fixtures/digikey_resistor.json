@@ -1,0 +1,164 @@
+{
+  "Product": {
+    "Description": {
+      "ProductDescription": "RES SMD 10K OHM 1% 1/16W 0402",
+      "DetailedDescription": "10 kOhms \u00b11% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+    },
+    "Manufacturer": {
+      "Id": 1276,
+      "Name": "Samsung Electro-Mechanics"
+    },
+    "ManufacturerProductNumber": "RC1005F103CS",
+    "UnitPrice": 0.09,
+    "ProductUrl": "https://www.digikey.de/en/products/detail/samsung-electro-mechanics/RC1005F103CS/3903439",
+    "DatasheetUrl": "//mm.digikey.com/Volume0/opasdata/d220001/medias/docus/39/RC_Series_ds.pdf",
+    "PhotoUrl": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2575/RC%20Series%200402%281005%20Metric%29.jpg",
+    "QuantityAvailable": 5387690,
+    "ProductStatus": {
+      "Id": 0,
+      "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "PrimaryVideoUrl": null,
+    "Parameters": [
+      {
+        "ParameterId": 2085,
+        "ParameterText": "Resistance",
+        "ParameterType": "UnitOfMeasure",
+        "ValueId": "10 kOhms",
+        "ValueText": "10 kOhms"
+      },
+      {
+        "ParameterId": 3,
+        "ParameterText": "Tolerance",
+        "ParameterType": "String",
+        "ValueId": "1131",
+        "ValueText": "\u00b11%"
+      },
+      {
+        "ParameterId": 2,
+        "ParameterText": "Power (Watts)",
+        "ParameterType": "String",
+        "ValueId": "7854",
+        "ValueText": "0.063W, 1/16W"
+      },
+      {
+        "ParameterId": 174,
+        "ParameterText": "Composition",
+        "ParameterType": "String",
+        "ValueId": "411742",
+        "ValueText": "Thick Film"
+      },
+      {
+        "ParameterId": 5,
+        "ParameterText": "Features",
+        "ParameterType": "String",
+        "ValueId": "376928",
+        "ValueText": "Moisture Resistant"
+      },
+      {
+        "ParameterId": 17,
+        "ParameterText": "Temperature Coefficient",
+        "ParameterType": "String",
+        "ValueId": "1378",
+        "ValueText": "\u00b1100ppm/\u00b0C"
+      },
+      {
+        "ParameterId": 252,
+        "ParameterText": "Operating Temperature",
+        "ParameterType": "String",
+        "ValueId": "242934",
+        "ValueText": "-55\u00b0C ~ 155\u00b0C"
+      },
+      {
+        "ParameterId": 16,
+        "ParameterText": "Package / Case",
+        "ParameterType": "String",
+        "ValueId": "39158",
+        "ValueText": "0402 (1005 Metric)"
+      },
+      {
+        "ParameterId": 1291,
+        "ParameterText": "Supplier Device Package",
+        "ParameterType": "String",
+        "ValueId": "39157",
+        "ValueText": "0402"
+      },
+      {
+        "ParameterId": 46,
+        "ParameterText": "Size / Dimension",
+        "ParameterType": "String",
+        "ValueId": "6310",
+        "ValueText": "0.039\" L x 0.020\" W (1.00mm x 0.50mm)"
+      },
+      {
+        "ParameterId": 1500,
+        "ParameterText": "Height - Seated (Max)",
+        "ParameterType": "String",
+        "ValueId": "4914",
+        "ValueText": "0.016\" (0.40mm)"
+      },
+      {
+        "ParameterId": 1127,
+        "ParameterText": "Number of Terminations",
+        "ParameterType": "Double",
+        "ValueId": "2",
+        "ValueText": "2"
+      },
+      {
+        "ParameterId": 1531,
+        "ParameterText": "Failure Rate",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      }
+    ],
+    "BaseProductNumber": null,
+    "Category": {
+      "CategoryId": 2,
+      "ParentId": 0,
+      "Name": "Resistors",
+      "ProductCount": 0,
+      "NewProductCount": 0,
+      "ImageUrl": "https://www.digikey.de//mm.digikey.com/Volume0/opasdata/d220001/derivates/3/002/639/316/FVT%20SERIES_tmb.jpg",
+      "SeoDescription": "Products within this category include fixed-value (non-adjustable) resistors and related mounting accessories, organized according to their physical form factor or the method by which they are physically and electrically connected within an end application. Adjustable or variable-value resistors (also known as potentiometers or rheostats) are found separately, in a category of their own.",
+      "ChildCategories": [
+        {
+          "CategoryId": 52,
+          "ParentId": 2,
+          "Name": "Chip Resistor - Surface Mount",
+          "ProductCount": 0,
+          "NewProductCount": 0,
+          "ImageUrl": "https://www.digikey.de//mm.digikey.com/Volume0/opasdata/d220001/derivates/3/002/683/989/MFG_RMC%20SERIES_tmb.jpg",
+          "SeoDescription": "Resistors provide opposition to current flow, in a manner that is proportional to the electric potential (voltage) imposed across them, and which is ideally unaffected by signal frequency or changes in temperature. Resistors described as surface mount chip types are designed to be affixed to the surface of a printed circuit board and incorporate a single resistor per device package.",
+          "ChildCategories": []
+        }
+      ]
+    },
+    "DateLastBuyChance": null,
+    "ManufacturerLeadWeeks": "56",
+    "ManufacturerPublicQuantity": 0,
+    "Series": {
+      "Id": 4356,
+      "Name": "RC"
+    },
+    "Classifications": {
+      "ReachStatus": "REACH Unaffected",
+      "RohsStatus": "ROHS3 Compliant",
+      "MoistureSensitivityLevel": "1  (Unlimited)",
+      "ExportControlClassNumber": "EAR99",
+      "HtsusCode": "8533.21.0030"
+    },
+    "OtherNames": [
+      "1276-3431-6",
+      "1276-3431-2",
+      "1276-3431-1"
+    ]
+  },
+  "AccountIdUsed": 0,
+  "CustomerIdUsed": 0
+}

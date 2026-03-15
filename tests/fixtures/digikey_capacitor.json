@@ -1,0 +1,185 @@
+{
+  "Product": {
+    "Description": {
+      "ProductDescription": "CAP CER 0.33UF 50V X7R 0805",
+      "DetailedDescription": "0.33 \u00b5F \u00b110% 50V Ceramic Capacitor X7R 0805 (2012 Metric)"
+    },
+    "Manufacturer": {
+      "Id": 1276,
+      "Name": "Samsung Electro-Mechanics"
+    },
+    "ManufacturerProductNumber": "CL21B334KBFNNNE",
+    "UnitPrice": 0.09,
+    "ProductUrl": "https://www.digikey.de/en/products/detail/samsung-electro-mechanics/CL21B334KBFNNNE/3886781",
+    "DatasheetUrl": "//mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1068/CL21B334KBFNNNE_Spec.pdf",
+    "PhotoUrl": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2537/Ceramic-Capacitor-CL-Series.jpg",
+    "QuantityAvailable": 254176,
+    "ProductStatus": {
+      "Id": 0,
+      "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "PrimaryVideoUrl": null,
+    "Parameters": [
+      {
+        "ParameterId": 2049,
+        "ParameterText": "Capacitance",
+        "ParameterType": "UnitOfMeasure",
+        "ValueId": "0.33 \u00b5F",
+        "ValueText": "0.33 \u00b5F"
+      },
+      {
+        "ParameterId": 3,
+        "ParameterText": "Tolerance",
+        "ParameterType": "String",
+        "ValueId": "1340",
+        "ValueText": "\u00b110%"
+      },
+      {
+        "ParameterId": 14,
+        "ParameterText": "Voltage - Rated",
+        "ParameterType": "String",
+        "ValueId": "238738",
+        "ValueText": "50V"
+      },
+      {
+        "ParameterId": 17,
+        "ParameterText": "Temperature Coefficient",
+        "ParameterType": "String",
+        "ValueId": "422415",
+        "ValueText": "X7R"
+      },
+      {
+        "ParameterId": 252,
+        "ParameterText": "Operating Temperature",
+        "ParameterType": "String",
+        "ValueId": "242918",
+        "ValueText": "-55\u00b0C ~ 125\u00b0C"
+      },
+      {
+        "ParameterId": 5,
+        "ParameterText": "Features",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      },
+      {
+        "ParameterId": 707,
+        "ParameterText": "Ratings",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      },
+      {
+        "ParameterId": 405,
+        "ParameterText": "Applications",
+        "ParameterType": "String",
+        "ValueId": "350483",
+        "ValueText": "General Purpose"
+      },
+      {
+        "ParameterId": 1531,
+        "ParameterText": "Failure Rate",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      },
+      {
+        "ParameterId": 69,
+        "ParameterText": "Mounting Type",
+        "ParameterType": "String",
+        "ValueId": "409416",
+        "ValueText": "Surface Mount, MLCC"
+      },
+      {
+        "ParameterId": 16,
+        "ParameterText": "Package / Case",
+        "ParameterType": "String",
+        "ValueId": "39329",
+        "ValueText": "0805 (2012 Metric)"
+      },
+      {
+        "ParameterId": 46,
+        "ParameterText": "Size / Dimension",
+        "ParameterType": "String",
+        "ValueId": "8569",
+        "ValueText": "0.079\" L x 0.049\" W (2.00mm x 1.25mm)"
+      },
+      {
+        "ParameterId": 1500,
+        "ParameterText": "Height - Seated (Max)",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      },
+      {
+        "ParameterId": 1501,
+        "ParameterText": "Thickness (Max)",
+        "ParameterType": "String",
+        "ValueId": "7180",
+        "ValueText": "0.053\" (1.35mm)"
+      },
+      {
+        "ParameterId": 508,
+        "ParameterText": "Lead Spacing",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      },
+      {
+        "ParameterId": 4,
+        "ParameterText": "Lead Style",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      }
+    ],
+    "BaseProductNumber": null,
+    "Category": {
+      "CategoryId": 3,
+      "ParentId": 0,
+      "Name": "Capacitors",
+      "ProductCount": 0,
+      "NewProductCount": 0,
+      "ImageUrl": "https://www.digikey.de//mm.digikey.com/Volume0/opasdata/d220001/derivates/3/002/640/398/BCAP0350%20E270%20T11_tmb.jpg",
+      "SeoDescription": "Capacitor products, also known as \"condensers\", are generally named and organized in reference to the dielectric material incorporated within. Along with variations in construction methods, the choice of dielectric material has strong influence on a given device's relative cost, size, parametric stability, and suitability for a particular application.",
+      "ChildCategories": [
+        {
+          "CategoryId": 60,
+          "ParentId": 3,
+          "Name": "Ceramic Capacitors",
+          "ProductCount": 0,
+          "NewProductCount": 0,
+          "ImageUrl": "https://www.digikey.de//mm.digikey.com/Volume0/opasdata/d220001/derivates/3/300/365/960/CGA-Series-0402-%281005-Metric%29_tmb.jpg",
+          "SeoDescription": "A capacitor is a passive electronic device that stores electric charge. Ceramic capacitors consist of two or more alternating layers of ceramic material as the dielectric and metal layers acting as the non-polarized electrodes. Applications include automotive, bypass, decoupling, filtering, RF, and ESD protection. Through-hole versions are often disc or \"blob\" shaped with two wire leads.",
+          "ChildCategories": []
+        }
+      ]
+    },
+    "DateLastBuyChance": null,
+    "ManufacturerLeadWeeks": "31",
+    "ManufacturerPublicQuantity": 0,
+    "Series": {
+      "Id": 11392,
+      "Name": "CL"
+    },
+    "Classifications": {
+      "ReachStatus": "REACH Unaffected",
+      "RohsStatus": "ROHS3 Compliant",
+      "MoistureSensitivityLevel": "1  (Unlimited)",
+      "ExportControlClassNumber": "EAR99",
+      "HtsusCode": "8532.24.0020"
+    },
+    "OtherNames": [
+      "1276-1123-2",
+      "1276-1123-1",
+      "1276-1123-6"
+    ]
+  },
+  "AccountIdUsed": 0,
+  "CustomerIdUsed": 0
+}

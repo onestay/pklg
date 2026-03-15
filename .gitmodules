@@ -1,0 +1,3 @@
+[submodule "lib/kicad-library-utils"]
+	path = lib/kicad-library-utils
+	url = https://gitlab.com/kicad/libraries/kicad-library-utils.git

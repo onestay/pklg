@@ -1,0 +1,194 @@
+{
+  "Product": {
+    "Description": {
+      "ProductDescription": "FIXED IND 33UH 800MA 292.5 MOHM",
+      "DetailedDescription": "33 \u00b5H Drum Core, Wirewound Inductor 800 mA 292.5mOhm Max Nonstandard"
+    },
+    "Manufacturer": {
+      "Id": 587,
+      "Name": "Taiyo Yuden"
+    },
+    "ManufacturerProductNumber": "NRS5030T330MMGJV",
+    "UnitPrice": 0.33,
+    "ProductUrl": "https://www.digikey.de/en/products/detail/taiyo-yuden/NRS5030T330MMGJV/5182106",
+    "DatasheetUrl": "//mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2521/NRS5030T330MMGJV_SS.pdf",
+    "PhotoUrl": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/8891/587_NR-series.jpg",
+    "QuantityAvailable": 0,
+    "ProductStatus": {
+      "Id": 0,
+      "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "PrimaryVideoUrl": null,
+    "Parameters": [
+      {
+        "ParameterId": 183,
+        "ParameterText": "Type",
+        "ParameterType": "String",
+        "ValueId": "694884",
+        "ValueText": "Drum Core, Wirewound"
+      },
+      {
+        "ParameterId": 1221,
+        "ParameterText": "Material - Core",
+        "ParameterType": "String",
+        "ValueId": "346647",
+        "ValueText": "Ferrite"
+      },
+      {
+        "ParameterId": 2087,
+        "ParameterText": "Inductance",
+        "ParameterType": "UnitOfMeasure",
+        "ValueId": "33 \u00b5H",
+        "ValueText": "33 \u00b5H"
+      },
+      {
+        "ParameterId": 3,
+        "ParameterText": "Tolerance",
+        "ParameterType": "String",
+        "ValueId": "1900",
+        "ValueText": "\u00b120%"
+      },
+      {
+        "ParameterId": 2088,
+        "ParameterText": "Current Rating (Amps)",
+        "ParameterType": "UnitOfMeasure",
+        "ValueId": "800 mA",
+        "ValueText": "800 mA"
+      },
+      {
+        "ParameterId": 1219,
+        "ParameterText": "Current - Saturation (Isat)",
+        "ParameterType": "String",
+        "ValueId": "44642",
+        "ValueText": "1.15A"
+      },
+      {
+        "ParameterId": 314,
+        "ParameterText": "DC Resistance (DCR)",
+        "ParameterType": "String",
+        "ValueId": "166848",
+        "ValueText": "292.5mOhm Max"
+      },
+      {
+        "ParameterId": 705,
+        "ParameterText": "Q @ Freq",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      },
+      {
+        "ParameterId": 706,
+        "ParameterText": "Frequency - Self Resonant",
+        "ParameterType": "String",
+        "ValueId": "73717",
+        "ValueText": "10MHz"
+      },
+      {
+        "ParameterId": 707,
+        "ParameterText": "Ratings",
+        "ParameterType": "String",
+        "ValueId": "312105",
+        "ValueText": "AEC-Q200"
+      },
+      {
+        "ParameterId": 252,
+        "ParameterText": "Operating Temperature",
+        "ParameterType": "String",
+        "ValueId": "212478",
+        "ValueText": "-40\u00b0C ~ 125\u00b0C"
+      },
+      {
+        "ParameterId": 1222,
+        "ParameterText": "Inductance Frequency - Test",
+        "ParameterType": "UnitOfMeasure",
+        "ValueId": "100 kHz",
+        "ValueText": "100 kHz"
+      },
+      {
+        "ParameterId": 69,
+        "ParameterText": "Mounting Type",
+        "ParameterType": "String",
+        "ValueId": "409393",
+        "ValueText": "Surface Mount"
+      },
+      {
+        "ParameterId": 16,
+        "ParameterText": "Package / Case",
+        "ParameterType": "String",
+        "ValueId": "380434",
+        "ValueText": "Nonstandard"
+      },
+      {
+        "ParameterId": 1291,
+        "ParameterText": "Supplier Device Package",
+        "ParameterType": "String",
+        "ValueId": "1",
+        "ValueText": "-"
+      },
+      {
+        "ParameterId": 46,
+        "ParameterText": "Size / Dimension",
+        "ParameterType": "String",
+        "ValueId": "13675",
+        "ValueText": "0.193\" L x 0.193\" W (4.90mm x 4.90mm)"
+      },
+      {
+        "ParameterId": 1500,
+        "ParameterText": "Height - Seated (Max)",
+        "ParameterType": "String",
+        "ValueId": "10308",
+        "ValueText": "0.118\" (3.00mm)"
+      }
+    ],
+    "BaseProductNumber": null,
+    "Category": {
+      "CategoryId": 4,
+      "ParentId": 0,
+      "Name": "Inductors, Coils, Chokes",
+      "ProductCount": 0,
+      "NewProductCount": 0,
+      "ImageUrl": "https://www.digikey.de//mm.digikey.com/Volume0/opasdata/d220001/derivates/3/002/465/830/760308104119_tmb.jpg",
+      "SeoDescription": "Inductors, coils, and chokes are various names used to refer to products that store energy in the form of a magnetic field. The vast majority of the products found in this category are simple fixed-value devices, though adjustable types, products for wireless power transmission, and magnetically-coupled inductor arrays are also included. Note that the coupled-inductor devices found within this product family are characterized by having multiple identical windings sharing a common magnetic core; similar products with non-identical windings are more commonly described as transformers, and are categorized as such.",
+      "ChildCategories": [
+        {
+          "CategoryId": 71,
+          "ParentId": 4,
+          "Name": "Fixed Inductors",
+          "ProductCount": 0,
+          "NewProductCount": 0,
+          "ImageUrl": "https://www.digikey.de//mm.digikey.com/Volume0/opasdata/d220001/derivates/3/002/690/369/MFG_WE-HCF%202013%20Series_tmb.jpg",
+          "SeoDescription": "An inductor, also known as a coil, choke, or reactor, is a passive two-terminal electrical component that stores energy in a magnetic field when electric current flows through it. When the current changes, the magnetic field induces a voltage in the conductor. The induced voltage has a polarity which opposes the change in current that created it. The unit of inductance is the Henry (H). Mounting options include surface, through-hole, and chassis.",
+          "ChildCategories": []
+        }
+      ]
+    },
+    "DateLastBuyChance": null,
+    "ManufacturerLeadWeeks": "8",
+    "ManufacturerPublicQuantity": 0,
+    "Series": {
+      "Id": 2000,
+      "Name": "NR"
+    },
+    "Classifications": {
+      "ReachStatus": "REACH Unknown",
+      "RohsStatus": "ROHS3 Compliant",
+      "MoistureSensitivityLevel": "1  (Unlimited)",
+      "ExportControlClassNumber": "EAR99",
+      "HtsusCode": "8504.50.8000"
+    },
+    "OtherNames": [
+      "LM NRS5030T 330MMGJV",
+      "587-6106-6",
+      "NRS5030T330MMGJV-ND",
+      "587-6106-1",
+      "587-6106-2"
+    ]
+  },
+  "AccountIdUsed": 0,
+  "CustomerIdUsed": 0
+}
