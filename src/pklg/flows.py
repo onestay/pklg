@@ -58,7 +58,9 @@ def add_specialized(
     auto_name = ""
     if product.value_number is not None and product.value_prefix is not None:
         try:
-            auto_name = format_short_value(product.value_number, product.value_prefix, component_type)
+            auto_name = format_short_value(
+                product.value_number, product.value_prefix, component_type
+            )
         except ValueError:
             pass
 
@@ -77,7 +79,9 @@ def add_specialized(
         distributor_1_part_number=distributor_pn,
     )
 
-    symbol_name = f"{spec.ref_des}_{name}_{package}_{product.manufacturer}_{product.mpn}"
+    symbol_name = (
+        f"{spec.ref_des}_{name}_{package}_{product.manufacturer}_{product.mpn}"
+    )
     target_library = f"{mgr.library_prefix}{spec.library_name}.kicad_sym"
 
     result = edit_part_info(part, footprint, symbol_name, target_library)
@@ -92,7 +96,9 @@ def add_specialized(
         raise typer.Exit()
 
     symbol_name = mgr.add_symbol(part, spec, footprint)
-    console.print(f"[green]Added symbol '[bold]{symbol_name}[/bold]' to {target_library}[/green]")
+    console.print(
+        f"[green]Added symbol '[bold]{symbol_name}[/bold]' to {target_library}[/green]"
+    )
 
 
 def add_generic(
@@ -104,7 +110,10 @@ def add_generic(
     """Add a generic component derived from a source library symbol."""
     # Browse source libraries (standard + extra)
     source_libs = mgr.list_source_libraries()
-    choices = [questionary.Choice(title=name, value=str(path)) for name, path in source_libs.items()]
+    choices = [
+        questionary.Choice(title=name, value=str(path))
+        for name, path in source_libs.items()
+    ]
     source_library = questionary.select(
         "Pick a source library:",
         choices=choices,
@@ -132,7 +141,9 @@ def add_generic(
     ).unsafe_ask()
 
     if target_choice == "-- Create new --":
-        lib_name = questionary.text("New library name (without prefix/extension):").unsafe_ask()
+        lib_name = questionary.text(
+            "New library name (without prefix/extension):"
+        ).unsafe_ask()
         target_library = f"{mgr.library_prefix}{lib_name}.kicad_sym"
     else:
         target_library = target_choice
@@ -154,10 +165,14 @@ def add_generic(
         footprint = src_footprint
         console.print(f"  [dim]Footprint:[/dim] {footprint}")
     else:
-        footprint = questionary.text("Footprint (e.g. Package_SO:SOIC-8_3.9x4.9mm_P1.27mm):").unsafe_ask()
+        footprint = questionary.text(
+            "Footprint (e.g. Package_SO:SOIC-8_3.9x4.9mm_P1.27mm):"
+        ).unsafe_ask()
 
     # Component name — default to the source symbol name
-    name = questionary.text("Component name (identifier for symbol):", default=derive_from).unsafe_ask()
+    name = questionary.text(
+        "Component name (identifier for symbol):", default=derive_from
+    ).unsafe_ask()
 
     # Package
     package = product.package or ""
@@ -166,7 +181,11 @@ def add_generic(
 
     # Prefer source symbol's datasheet/description over distributor's if available
     datasheet = src_props.get("Datasheet", "") or product.datasheet_url
-    description = src_props.get("Description", "") or product.detailed_description or product.description
+    description = (
+        src_props.get("Description", "")
+        or product.detailed_description
+        or product.description
+    )
 
     part = PartInfo(
         name=name,
@@ -179,7 +198,11 @@ def add_generic(
         distributor_1_part_number=distributor_pn,
     )
 
-    symbol_name = f"{ref_des}_{name}_{package}_{product.manufacturer}_{product.mpn}".replace(" ", "-")
+    symbol_name = (
+        f"{ref_des}_{name}_{package}_{product.manufacturer}_{product.mpn}".replace(
+            " ", "-"
+        )
+    )
 
     result = edit_part_info(part, footprint, symbol_name, target_library)
     if result is None:
@@ -200,4 +223,6 @@ def add_generic(
         footprint=footprint,
         target_library=target_library,
     )
-    console.print(f"[green]Added symbol '[bold]{symbol_name}[/bold]' to {target_library}[/green]")
+    console.print(
+        f"[green]Added symbol '[bold]{symbol_name}[/bold]' to {target_library}[/green]"
+    )

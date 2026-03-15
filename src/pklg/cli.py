@@ -27,7 +27,9 @@ class Config(BaseModel):
 @app.command()
 def add(ctx: typer.Context):
     cfg: Config = ctx.obj
-    mgr = SymbolManager(cfg.stdlib_path, cfg.library_path, cfg.library_prefix, cfg.extra_symbol_paths)
+    mgr = SymbolManager(
+        cfg.stdlib_path, cfg.library_path, cfg.library_prefix, cfg.extra_symbol_paths
+    )
 
     component_type = questionary.select(
         "Component type:",
@@ -54,10 +56,14 @@ def add(ctx: typer.Context):
 
     console.print(f"  [bold]MPN:[/bold] {product.mpn}")
     console.print(f"  [bold]Manufacturer:[/bold] {product.manufacturer}")
-    console.print(f"  [bold]Description:[/bold] {product.detailed_description or product.description}")
+    console.print(
+        f"  [bold]Description:[/bold] {product.detailed_description or product.description}"
+    )
 
     if not product.mpn:
-        console.print("[yellow]Warning: MPN is empty — the API response may have an unexpected format[/yellow]")
+        console.print(
+            "[yellow]Warning: MPN is empty — the API response may have an unexpected format[/yellow]"
+        )
 
     if component_type == "generic":
         add_generic(mgr, product, part_number, console)
@@ -77,8 +83,13 @@ def main(
         DEFAULT_CONFIG.touch()
     with DEFAULT_CONFIG.open("rb") as fd:
         loaded_config = tomllib.load(fd)
-        if "standard_symbol_library_path" in loaded_config and "stdlib_path" not in loaded_config:
-            loaded_config["stdlib_path"] = loaded_config.pop("standard_symbol_library_path")
+        if (
+            "standard_symbol_library_path" in loaded_config
+            and "stdlib_path" not in loaded_config
+        ):
+            loaded_config["stdlib_path"] = loaded_config.pop(
+                "standard_symbol_library_path"
+            )
         cfg = Config.model_validate({**loaded_config, "raw_config": loaded_config})
         ctx.obj = cfg
 

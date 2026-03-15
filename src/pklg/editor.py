@@ -51,7 +51,9 @@ distributor_2_part_number = "{part.distributor_2_part_number}"
             edited = f.read()
 
         # Strip comments
-        lines = [line for line in edited.splitlines() if not line.strip().startswith("#")]
+        lines = [
+            line for line in edited.splitlines() if not line.strip().startswith("#")
+        ]
         stripped = "\n".join(lines).strip()
 
         if not stripped:
@@ -70,10 +72,18 @@ distributor_2_part_number = "{part.distributor_2_part_number}"
             mpn=part_data.get("mpn", part.mpn),
             datasheet=part_data.get("datasheet", part.datasheet),
             description=part_data.get("description", part.description),
-            distributor_1_link=dist_data.get("distributor_1_link", part.distributor_1_link),
-            distributor_1_part_number=dist_data.get("distributor_1_part_number", part.distributor_1_part_number),
-            distributor_2_link=dist_data.get("distributor_2_link", part.distributor_2_link),
-            distributor_2_part_number=dist_data.get("distributor_2_part_number", part.distributor_2_part_number),
+            distributor_1_link=dist_data.get(
+                "distributor_1_link", part.distributor_1_link
+            ),
+            distributor_1_part_number=dist_data.get(
+                "distributor_1_part_number", part.distributor_1_part_number
+            ),
+            distributor_2_link=dist_data.get(
+                "distributor_2_link", part.distributor_2_link
+            ),
+            distributor_2_part_number=dist_data.get(
+                "distributor_2_part_number", part.distributor_2_part_number
+            ),
         )
 
         return updated_part, edited_footprint

@@ -25,3 +25,6 @@ build-backend = "uv_build"
 
 [project.scripts]
 pklg = "pklg.cli:app"
+
+[tool.ruff]
+exclude = [".venv", "lib/"]

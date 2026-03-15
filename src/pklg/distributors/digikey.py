@@ -87,10 +87,16 @@ def parse_product(raw: dict) -> DigiKeyProduct:
 
     if not result.mpn:
         keys = list(product.keys())[:10]
-        print(f"Warning: 'ManufacturerProductNumber' not found. Available keys: {keys}", file=sys.stderr)
+        print(
+            f"Warning: 'ManufacturerProductNumber' not found. Available keys: {keys}",
+            file=sys.stderr,
+        )
     if not result.manufacturer:
         keys = list(product.get("Manufacturer", {}).keys())
-        print(f"Warning: 'Manufacturer.Name' not found. Available keys: {keys}", file=sys.stderr)
+        print(
+            f"Warning: 'Manufacturer.Name' not found. Available keys: {keys}",
+            file=sys.stderr,
+        )
 
     return result
 

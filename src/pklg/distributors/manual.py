@@ -26,6 +26,8 @@ class Manual:
             mpn=mpn,
             datasheet_url=datasheet_url,
             product_url=product_url,
-            component_type=self.component_type if self.component_type != "generic" else None,
+            component_type=self.component_type
+            if self.component_type != "generic"
+            else None,
             package=package or None,
         )

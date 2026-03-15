@@ -7,7 +7,9 @@ from pathlib import Path
 from pydantic import BaseModel
 
 # Add kicad-library-utils common/ to path for its internal imports (geometry, sexpr)
-_kicad_lib_utils = Path(__file__).resolve().parents[2] / "lib" / "kicad-library-utils" / "common"
+_kicad_lib_utils = (
+    Path(__file__).resolve().parents[2] / "lib" / "kicad-library-utils" / "common"
+)
 if str(_kicad_lib_utils) not in sys.path:
     sys.path.insert(0, str(_kicad_lib_utils))
 
@@ -92,7 +94,13 @@ COMPONENT_SPECS: dict[str, ComponentSpec] = {
 
 
 class SymbolManager:
-    def __init__(self, standard_library_path: Path, custom_library_base: Path, library_prefix: str, extra_symbol_paths: list[Path] | None = None):
+    def __init__(
+        self,
+        standard_library_path: Path,
+        custom_library_base: Path,
+        library_prefix: str,
+        extra_symbol_paths: list[Path] | None = None,
+    ):
         self.standard_library_path = standard_library_path
         self.custom_library_base = custom_library_base
         self.library_prefix = library_prefix
@@ -134,7 +142,13 @@ class SymbolManager:
     def _write_to_library(self, symbol, custom_lib_path: Path) -> None:
         """Append symbol to custom library and write to disk."""
         if not custom_lib_path.is_file():
-            empty_template = Path(__file__).resolve().parents[2] / "lib" / "kicad-library-utils" / "common" / "empty.kicad_sym"
+            empty_template = (
+                Path(__file__).resolve().parents[2]
+                / "lib"
+                / "kicad-library-utils"
+                / "common"
+                / "empty.kicad_sym"
+            )
             custom_lib_path.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(empty_template, custom_lib_path)
         custom_lib = KicadLibrary.from_file(str(custom_lib_path))
@@ -143,17 +157,28 @@ class SymbolManager:
 
     def add_symbol(self, part: PartInfo, spec: ComponentSpec, footprint: str) -> str:
         """Add a specialized component symbol (capacitor/resistor/inductor)."""
-        std_lib = KicadLibrary.from_file(str(self.standard_library_path / spec.source_library))
-        base_symbol = next((s for s in std_lib.symbols if s.name == spec.derive_from), None)
+        std_lib = KicadLibrary.from_file(
+            str(self.standard_library_path / spec.source_library)
+        )
+        base_symbol = next(
+            (s for s in std_lib.symbols if s.name == spec.derive_from), None
+        )
         if not base_symbol:
-            raise RuntimeError(f"Symbol '{spec.derive_from}' not found in '{spec.source_library}'")
+            raise RuntimeError(
+                f"Symbol '{spec.derive_from}' not found in '{spec.source_library}'"
+            )
 
         symbol = copy.deepcopy(base_symbol)
-        symbol.name = f"{spec.ref_des}_{part.name}_{part.package}_{part.manufacturer}_{part.mpn}".replace(" ", "-")
+        symbol.name = f"{spec.ref_des}_{part.name}_{part.package}_{part.manufacturer}_{part.mpn}".replace(
+            " ", "-"
+        )
 
         self._apply_part_info(symbol, part, footprint)
 
-        custom_lib_path = self.custom_library_base / f"{self.library_prefix}{spec.library_name}.kicad_sym"
+        custom_lib_path = (
+            self.custom_library_base
+            / f"{self.library_prefix}{spec.library_name}.kicad_sym"
+        )
         self._write_to_library(symbol, custom_lib_path)
 
         return symbol.name
@@ -171,10 +196,14 @@ class SymbolManager:
         std_lib = KicadLibrary.from_file(source_library)
         base_symbol = next((s for s in std_lib.symbols if s.name == derive_from), None)
         if not base_symbol:
-            raise RuntimeError(f"Symbol '{derive_from}' not found in '{source_library}'")
+            raise RuntimeError(
+                f"Symbol '{derive_from}' not found in '{source_library}'"
+            )
 
         symbol = copy.deepcopy(base_symbol)
-        symbol.name = f"{ref_des}_{part.name}_{part.package}_{part.manufacturer}_{part.mpn}".replace(" ", "-")
+        symbol.name = f"{ref_des}_{part.name}_{part.package}_{part.manufacturer}_{part.mpn}".replace(
+            " ", "-"
+        )
 
         self._apply_part_info(symbol, part, footprint)
 
@@ -183,7 +212,9 @@ class SymbolManager:
 
         return symbol.name
 
-    def get_symbol_properties(self, library_path: str, symbol_name: str) -> dict[str, str]:
+    def get_symbol_properties(
+        self, library_path: str, symbol_name: str
+    ) -> dict[str, str]:
         """Return {property_name: value} for all properties of a symbol."""
         lib = KicadLibrary.from_file(library_path)
         symbol = next((s for s in lib.symbols if s.name == symbol_name), None)
