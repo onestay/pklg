@@ -136,7 +136,7 @@ class SymbolManager:
         }
         for key, value in custom_fields.items():
             prop = Property(key, value)
-            prop.effects.is_hidden = True
+            prop.is_hidden = True
             symbol.properties.append(prop)
 
     def _write_to_library(self, symbol, custom_lib_path: Path) -> None:
